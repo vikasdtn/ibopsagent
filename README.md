@@ -560,22 +560,6 @@ python agent.py
 - **Solution:** Use HTTPS or localhost (required by browser security)
 - **Solution:** Grant screen capture permissions when prompted
 
-## 📚 Additional Resources
-
-- **Py5cheSim Documentation**: [Main README](../README.md)
-- **IBOpsSim Guide**: [IBOpsSim README](../IBOpsSim/README.md)
-- **5G RAN Parameters**: [Parameter Guide](../IBOpsSim/5G_RAN_Parameters.md)
-- **Bedrock AgentCore**: [AWS Documentation](https://docs.aws.amazon.com/bedrock/)
-- **Strands Framework**: [Strands Agents Documentation](https://github.com/awslabs/strands)
-
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-- Additional analysis tools
-- Enhanced visualization
-- More 5G optimization strategies
-- UI/UX improvements
-- Documentation enhancements
 
 ## 📄 License
 
