@@ -109,7 +109,7 @@ Analyzes IBOpsSim performance metrics and recommends optimizations.
 #### 1. Install Python Dependencies
 
 ```bash
-cd Py5cheSim/agent
+cd ./agent
 pip install -r requirements.txt
 ```
 
