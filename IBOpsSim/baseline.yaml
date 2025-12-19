@@ -1,0 +1,30 @@
+name: "Baseline Scenario (10 UEs)"
+
+network:
+  bandwidth: 20                    # MHz
+  frequency_range: "FR1"           # FR1 or FR2
+  band: "B1"                       # Radio band
+  tdd: false                       # TDD/FDD mode
+  buffer_size: 81920               # UE buffer size in bytes
+  inter_scheduler: "RR"            # Inter-slice scheduler: RR, RRp, PF11
+  intra_scheduler: "RR"            # Intra-slice scheduler: RR, PF11
+  mimo_mode: "SU"                  # SU (Single-User) or MU (Multi-User)
+  mimo_layers: 2                   # Number of MIMO layers
+
+traffic:
+  dl_users: 5                      # Downlink users (reduced from 15)
+  ul_users: 5                      # Uplink users (balanced)
+  dl_packet_size: 5000            # DL packet size in bytes (reduced from 30KB)
+  ul_packet_size: 3000             # UL packet size in bytes (reduced from 5KB)
+  dl_arrival_rate: 1               # DL packets per second
+  ul_arrival_rate: 1               # UL packets per second (reduced from 2)
+  service_type: "eMBB"             # eMBB, mMTC, URLLC
+  delay_requirement: 20            # Delay requirement in ms
+  availability: ""                 # Availability requirement
+  sinr_pattern: "S30"              # SINR pattern: SXX (same) or DXX (distributed)
+
+simulation:
+  duration_ms: 30000               # Simulation duration in milliseconds
+  measurement_interval_ms: 1000    # Statistics measurement interval
+  inter_slice_granularity_ms: 3000 # Inter-slice scheduler granularity
+  debug: false                     # Enable debug logging

@@ -1,0 +1,30 @@
+name: "Congested Scenario (50 UEs)"
+
+network:
+  bandwidth: 40
+  frequency_range: "FR1"
+  band: "B1"
+  tdd: false
+  buffer_size: 524288
+  inter_scheduler: "PF11"
+  intra_scheduler: "PF11"
+  mimo_mode: "MU"
+  mimo_layers: 4
+
+traffic:
+  dl_users: 20                     # Reasonable congestion level
+  ul_users: 30                     # Balanced load
+  dl_packet_size: 5000            # Reduced from 80KB
+  ul_packet_size: 3000            # Reduced from 50KB  
+  dl_arrival_rate: 1               # Reduced from 3
+  ul_arrival_rate: 1               # Reduced from 5
+  service_type: "eMBB"
+  delay_requirement: 20
+  availability: ""
+  sinr_pattern: "D25"              # Distributed SINR for realistic congestion
+
+simulation:
+  duration_ms: 30000
+  measurement_interval_ms: 1000
+  inter_slice_granularity_ms: 3000
+  debug: false
