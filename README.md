@@ -73,7 +73,7 @@ pip install -r requirements.txt
 - `strands-agents` - Conversation management and agent orchestration  
 - `fastapi` - Web framework for API endpoints and CORS handling
 - `boto3` - AWS SDK for Bedrock and S3 service calls
-- `pyyaml` - YAML configuration parsing ⚠️ **Missing from requirements.txt**
+- `pyyaml` - YAML configuration parsing 
 
 **Additional Dependencies (auto-installed):**
 - `langfuse` - Observability and conversation tracing
@@ -81,13 +81,7 @@ pip install -r requirements.txt
 - `pydantic` - Data validation (FastAPI dependency)
 - `typing-extensions` - Type hints support
 
-**⚠️ Missing Dependencies:**
-The `requirements.txt` is missing `pyyaml` which is imported in the code. Add it manually:
-```bash
-pip install pyyaml
-```
-
-#### 3. Configure AWS Resources
+#### 2. Configure AWS Resources
 
 **Option 1: Edit agent.py directly (Quick Start)**
 ```python
@@ -118,7 +112,7 @@ export LANGFUSE_HOST="https://us.cloud.langfuse.com"
 3. **Request Model Access** in Bedrock console for Nova Pro and Claude Haiku
 4. **Configure IAM permissions** (see Security section)
 
-#### 2. Install Webapp Dependencies
+#### 3. Install Webapp Dependencies
 
 ```bash
 cd webapp
@@ -140,6 +134,7 @@ npm install
 - `navigator.mediaDevices.getDisplayMedia()` - Screen capture
 - `fetch()` - HTTP requests to agent backend
 - `localStorage` - Settings persistence
+
 
 ### Running Locally
 
@@ -222,6 +217,7 @@ Provides specific recommendations for high-density, uplink-heavy scenarios.
 1. Click the 📸 button in the webapp
 2. Select your simulation dashboard window
 3. The agent will analyze the screenshot and provide insights
+
 
 ## 🔧 Configuration
 
