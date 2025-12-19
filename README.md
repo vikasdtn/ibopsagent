@@ -29,51 +29,6 @@ agent/
     └── bookmarklet.js         # Browser bookmarklet for quick access
 ```
 
-## ✨ Features
-
-### 🤖 AI Agent Capabilities
-
-- **Amazon Nova Pro**: Primary AI model for intelligent responses
-- **Claude 3.5 Haiku**: Conversation summarization for context management
-- **Streaming Responses**: Real-time response generation
-- **Multi-modal Input**: Text and image (screenshot) analysis
-- **Observability**: Langfuse integration for tracing and monitoring
-
-### 🔧 Specialized Tools
-
-#### 1. `query_5g_knowledge_base`
-Queries Amazon Bedrock Knowledge Base containing 3GPP specifications.
-
-**Use for:**
-- General 5G questions
-- Standards and protocols
-- Technical specifications
-- Network slicing concepts
-
-#### 2. `get_ran_parameters_guide`
-Retrieves comprehensive 5G RAN parameters documentation from S3.
-
-**Use for:**
-- Parameter configuration guidance
-- Understanding tunable parameters
-- IBOps impact analysis
-- Best practices
-
-#### 3. `analyze_simulation_results`
-Analyzes IBOpsSim performance metrics and recommends optimizations.
-
-**Analyzes:**
-- Throughput (DL/UL)
-- Packet loss rates
-- Signal quality (SINR)
-- Resource utilization
-
-**Recommends:**
-- Bandwidth adjustments
-- MIMO configuration changes
-- Scheduler algorithm selection
-- Traffic profile optimization
-
 ### 💬 Web Interface Features
 
 - **WhatsApp-Style UI**: Familiar, intuitive chat interface
@@ -84,7 +39,7 @@ Analyzes IBOpsSim performance metrics and recommends optimizations.
 - **Session Persistence**: Maintains conversation context
 - **Responsive Design**: Works on desktop and mobile devices
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
